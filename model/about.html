@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Anton&family=Croissant+One&family=Dancing+Script&family=Lobster+Two&family=Reem+Kufi+Ink&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Sacramento&family=Shadows+Into+Light&family=Tilt+Prism&display=swap" 
+  rel="stylesheet">
+</head>
+
+<style>
+nav{
+    
+  
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    z-index: 999;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.banner img {
+  width: 50%;
+  height: 100%; /* Adjusted height for responsiveness */
+  display: block;
+  margin-top: auto;
+  margin-left: 600px;
+  overflow-x: hidden;
+  border-radius: 70%;
+}
+
+.col-1{
+    width: 30%;
+    height: 20%;
+    color: whitesmoke;
+    margin-top: -350px;
+    margin-left: 80px;
+
+}
+i{
+width: 20%;
+height: 20%;
+color: aliceblue;
+}
+
+.fa{
+  padding:15px;
+  border-radius: 50%;
+  background-color: rgb(246, 249, 250);
+  text-decoration: none;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  position:relative;
+ 
+}
+
+.fa-facebook{
+  
+  font-size:xx-large;
+  padding:11px;
+
+}
+.fa-facebook:hover{
+   
+   transition-duration: 5s;
+   color: antiquewhite;
+
+}
+.fa-youtube{
+  color:mediumorchid;
+ 
+}
+.fa-youtube:hover{
+  transition-duration: 5s;
+
+  color:white;
+  background-color: rgb(221, 35, 10);
+}
+.fa-twitter{
+  color:mediumorchid;
+
+}
+.fa-twitter:hover{
+  transition-duration: 3s;
+  background-color: orchid;
+  color:white;
+}
+.col-36{
+              width:100%;
+              text-align: left;
+              margin-top:15px;
+              color:white;
+              font-size:15px ;
+            }
+ 
+            .col-3{
+              text-align: center;
+              font-size: xx-large;
+              color: aliceblue;
+
+              margin-top: 250px;
+            }
+            .col-4{
+                float: right;
+                margin-right: 20px;
+                height: 90%;
+                width: 40%;
+                margin-top: 15%;
+                
+            }
+            img{
+                border-radius: 20%;
+            }
+            .col-5{
+                color: whitesmoke;
+                float: left;
+                width: 50%;
+                height: 30px;
+                margin-left: 20px;
+            }
+            
+  </style>
+
+  <body style="background-color: black;">
+    <nav>
+            
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Jigar</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        
+        <li><a href="#">Skill</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Eaperience</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+
+    <div class="banner" >
+        <img src="l (1).jpg"alt=""  >
+        </div>
+
+        <div class="col-1">
+            <h1>Hi There,</h1>
+            <h2>I'm Jiqar <span style="color: rgb(234, 175, 12);">Scable</span></h2>
+            <h3>I Am Into <span style="color: rgb(224, 193, 113);">Web Developl</span></h3>
+
+            <button style="border-radius: 20px;width: 100px;background-color: #659dc8;padding: 10px;">About Me</button>
+
+            <div class="col-36">
+              
+            
+            
+              <i class="fa-brands fa-facebook" ></i>
+
+              <i style="color:white;font-size:30px ;"class="fa-brands fa-instagram"></i>
+        <i style="color:white;font-size:30px ;"class="fa-brands fa-twitter"></i>
+        <i style="color:white;font-size: 30px;"class="fa-brands fa-youtube"></i></i>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <h1>How popular is gaming?</h1>
+          <p style="font-size: x-large;">Gaming is an extremely popular activity worldwide. The number of people who play games is estimated to be over 3 billion. Some estimates put the worldwide gaming market value between $180 billion and $220 billion in 2022. This is about double the market for the global film industry. The majority of the gaming market is people playing games on their smartphones.A casual gamer is someone who irregularly plays games or who only plays a single low-intensity game. An example casual gamer would be someone who plays word or puzzle games on their smartphone while on public transportation or at home while watching TV. Casual gaming is the largest portion of the gaming market due to its wide appeal and the ease of access provided by smartphones. A casual gamer would often not self-identify as a gamer.
+
+            A hardcore gamer is someone who regularly plays video games. They usually own dedicated video game devices, such as consoles or gaming PCs. A hardcore gamer often plays many games but focuses on one game or type of game they particularly enjoy. A hardcore gamer usually self-identifies as a gamer.</p>
+        </div>
+<br>
+        <h1 style="color: aquamarine;text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ABOUT</h1><br>
+        <div class="col-4">
+            <img src="n.jfif"alt=""  >
+        </div>
+
+        <div class="col-5">
+            <h1 style="color: lightskyblue;font-family:monospace;font-size: xx-large;"> NEED FOR SPEED</h1>
+            <p>The Need for Speed series was originally developed by Distinctive Software, a video game studio based in Vancouver, British Columbia, Canada. Prior to Electronic Arts' purchase of the company in 1991,[5] it had created popular racing games such as Stunts and Test Drive II: The Duel. After the purchase, the company was renamed Electronic Arts (EA) Canada. The company capitalized on its experience in the domain by developing the Need for Speed series in late 1992.[citation needed] EA Canada continued to develop and expand the Need for Speed franchise up to 2002, when another Vancouver-based developer, named Black Box Games, was acquired by EA and contracted to continue the series with Need for Speed: Hot Pursuit 2.[6] Meanwhile, Slightly Mad Studios would develop the 2009 sim racing title, Need for Speed: Shift, and its 2011 sequel, Shift 2: Unleashed.
+
+                The UK-based Criterion Games would develop the 2010 Hot Pursuit title; a successor to 1998's Need for Speed III: Hot Pursuit. The game introduced a social platform, titled Autolog, which allows players to track game progress, view leaderboards, share screenshots with friends, among other features.[7] The 2010 Hot Pursuit game would be well-received; a remastered version was released ten years later in 2020.[8] As a result of Hot Pursuit's critical success, in-contrast to the mixed reception of the Black Box-developed installments since 2007's Need for Speed: ProStreet, Criterion would become the lead developer of the franchise going forward.[9] At E3 2012, Criterion Games vice president Alex Ward announced that random developers would no longer be developing NFS titles. Ward wouldn't confirm that all Need for Speed games in the future would be developed entirely by Criterion, but he did say the studio would have "strong involvement" in them and would have control over which NFS titles would be released in the future.[1][10]
+                
+               </p>
+        </div>
+
+        
