@@ -1,0 +1,193 @@
+<header>
+       <div class="main-content">
+    <div class="logo">
+                    <img src="Avs_images/logot (1).png">
+                    </div>
+ 
+   
+       
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+  <ul class="menuheadingcontent" >
+       <a href="#"  style="background-color: #ce0f72;">Home</a>
+    <li class="lineheadingcontent topnav">
+       <a href="#">Aboutus</a>
+      <ul class="linknov" style="border-top: #f1561b 4px solid; width: 110px; z-index: 11111;">
+        <li class="linklist"><a href="#">About King</a></li>
+        <li class="linklist"><a href="#">Administration</a></li>
+        <li class="linklist"><a href="#">Vission and Mission</a></li>
+      </ul>
+    </li>
+
+      <li class="lineheadingcontent topnav">
+       <a >Treatment</a>
+     
+    </li>
+      <li class="lineheadingcontent topnav">
+      <a >Gallery</a>
+     
+    </li>
+      <li class="lineheadingcontent topnav">
+      <a >Enquiry</a>
+     
+    </li>
+
+      <li class="lineheadingcontent topnav">
+      <a href="#">Contact Us</a>
+     
+    </li>
+  </ul>
+                </nav>
+
+           <!-- <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>-->
+
+       </div>
+      </header>
+
+
+* On smaller screens, decrease text size */
+/*#######################################################################
+                     div code css
+#######################################################################*/
+.main-content
+{
+    /*background-color: green;*/
+    background-color: #5a055b;
+    text-align: right;
+    padding: 21px;
+}
+
+/*#######################################################################
+                     main  logo
+#######################################################################*/
+.logo {
+    padding: 12px;
+    margin-right: 667px;
+    position: absolute;
+    top: 13px;
+}
+    .logo img {
+        width: 490px;
+    }
+/*#######################################################################
+                     div code (and) a
+#######################################################################*/
+
+.main-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+
+/*#######################################################################
+                     ul (first ul tag)
+#######################################################################*/
+
+.menuheadingcontent
+{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  /*float: right;*/
+  float: initial;
+}
+/*#######################################################################
+                     ul and li (first ul li tag and hover)
+#######################################################################*/
+
+.menuheadingcontent .lineheadingcontent {
+    display: inline-block;
+}
+.menuheadingcontent .lineheadingcontent:hover {
+    /*background: #000000;*/
+    background: #ce0f72!important;
+}
+
+/*#######################################################################
+            ul and li and other ul (first ul li ul tag and hover )
+#######################################################################*/
+
+.menuheadingcontent .lineheadingcontent:hover .linknov {
+    display: block;
+}
+.menuheadingcontent .lineheadingcontent .linknov {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+
+/*#######################################################################
+            ul and li and other ul  li(first ul li ul tag and hover )
+#######################################################################*/
+
+.menuheadingcontent .lineheadingcontent .linknov .linklist { 
+  /*background: #2d6eff;*/ 
+  background: #ddd;
+    display: block;
+    width: 150px;
+    position: relative;
+    right: 40px;
+}
+
+.menuheadingcontent .lineheadingcontent .linknov .linklist a {
+    display:block !important;
+    color: black;
+
+} 
+.menuheadingcontent .lineheadingcontent .linknov .linklist:hover {
+    /*background: #000000;*/
+    /*background: #ff3737;*/
+    color: #ff3737 !important;
+}
+.menuheadingcontent .lineheadingcontent .linknov .linklist a:hover {
+    /*background: #000000;*/
+    /*background: #ff3737;*/
+    color: #ff3737;
+}
+
+
+//-#######################################################################//
+                   //Navbar script
+//#######################################################################//
+
+//<script>
+    let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let formBtn = document.querySelector('#login-btn');
+let loginForm = document.querySelector('.login-form-container');
+let formClose = document.querySelector('#form-close');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+let videoBtn = document.querySelectorAll('.vid-btn');
+
+window.onscroll = () =>{
+    searchBtn.classList.remove('fa-times');
+searchBar.classList.remove('active');
+menu.classList.remove('fa-times');
+navbar.classList.remove('active');
+loginForm.classList.remove('active');
+}
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+navbar.classList.toggle('active');
+});
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+searchBar.classList.toggle('active');
+});
+
+formBtn.addEventListener('click', () =>{
+    loginForm.classList.add('active');
+});
+
+formClose.addEventListener('click', () =>{
+    loginForm.classList.remove('active');
+});
+//</script>
